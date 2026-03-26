@@ -3,94 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مكتبة الأغاني 45</title>
+    <title>مكتبة الأغاني 61</title>
     <style>
-        :root {
-            --primary: #1db954;
-            --bg: #121212;
-            --card: #181818;
-            --text: #ffffff;
-        }
-
-        body {
-            background-color: var(--bg);
-            color: var(--text);
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-            margin: 0;
-            padding-bottom: 180px;
-            text-align: center;
-        }
-
+        :root { --primary: #1db954; --bg: #121212; --card: #181818; --text: #ffffff; }
+        body { background-color: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; margin: 0; padding-bottom: 180px; text-align: center; }
         header { padding: 30px; background: linear-gradient(#1db95433, #121212); }
         h1 { color: var(--primary); margin: 0; }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-            gap: 10px;
-            padding: 20px;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        .card {
-            background: var(--card);
-            padding: 20px;
-            border-radius: 10px;
-            cursor: pointer;
-            border: 1px solid #333;
-            transition: 0.3s;
-        }
-
-        .card:hover, .card.active {
-            border-color: var(--primary);
-            background: #282828;
-            transform: translateY(-3px);
-        }
-
-        .player-bar {
-            position: fixed;
-            bottom: 0; width: 100%;
-            background: #000;
-            border-top: 2px solid var(--primary);
-            padding: 15px 0;
-            z-index: 1000;
-        }
-
-        #track-info { font-weight: bold; color: var(--primary); margin-bottom: 10px; }
-
-        .progress-wrapper {
-            width: 90%; max-width: 600px;
-            height: 10px; background: #333;
-            margin: 10px auto; border-radius: 5px;
-            cursor: pointer; position: relative;
-        }
-
-        #progress-bar {
-            height: 100%; background: var(--primary);
-            width: 0%; border-radius: 5px;
-            pointer-events: none;
-        }
-
-        .controls { display: flex; justify-content: center; gap: 25px; align-items: center; }
-        .btn {
-            background: none; border: none; color: white;
-            font-size: 30px; cursor: pointer;
-        }
-
-        .play-btn {
-            background: var(--primary); color: black;
-            width: 55px; height: 55px; border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 22px;
-        }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 10px; padding: 20px; max-width: 1200px; margin: 0 auto; }
+        .card { background: var(--card); padding: 15px; border-radius: 8px; cursor: pointer; border: 1px solid #333; transition: 0.2s; font-size: 13px; }
+        .card:hover, .card.active { border-color: var(--primary); background: #282828; }
+        .player-bar { position: fixed; bottom: 0; width: 100%; background: #000; border-top: 2px solid var(--primary); padding: 15px 0; z-index: 1000; }
+        #track-info { font-weight: bold; color: var(--primary); margin-bottom: 5px; }
+        .progress-wrapper { width: 90%; max-width: 600px; height: 10px; background: #333; margin: 10px auto; border-radius: 5px; cursor: pointer; }
+        #progress-bar { height: 100%; background: var(--primary); width: 0%; border-radius: 5px; pointer-events: none; }
+        .controls { display: flex; justify-content: center; gap: 20px; align-items: center; }
+        .btn { background: none; border: none; color: white; font-size: 25px; cursor: pointer; }
+        .play-btn { background: var(--primary); color: black; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>قائمة تشغيل الـ 45 أغنية</h1>
-        <p>الترتيب: song.mp3 ثم song1.mp3 وما بعدها</p>
+        <h1>مشغل الـ 62 أغنية</h1>
+        <p>من song.mp3 إلى song61.mp3 (الحد الأقصى دقيقتان)</p>
     </header>
 
     <div class="grid">
@@ -139,10 +74,27 @@
         <div class="card" id="c43" onclick="loadTrack(43)">🎵 أغنية 43</div>
         <div class="card" id="c44" onclick="loadTrack(44)">🎵 أغنية 44</div>
         <div class="card" id="c45" onclick="loadTrack(45)">🎵 أغنية 45</div>
+        <div class="card" id="c46" onclick="loadTrack(46)">🎵 أغنية 46</div>
+        <div class="card" id="c47" onclick="loadTrack(47)">🎵 أغنية 47</div>
+        <div class="card" id="c48" onclick="loadTrack(48)">🎵 أغنية 48</div>
+        <div class="card" id="c49" onclick="loadTrack(49)">🎵 أغنية 49</div>
+        <div class="card" id="c50" onclick="loadTrack(50)">🎵 أغنية 50</div>
+        <div class="card" id="c51" onclick="loadTrack(51)">🎵 أغنية 51</div>
+        <div class="card" id="c52" onclick="loadTrack(52)">🎵 أغنية 52</div>
+        <div class="card" id="c53" onclick="loadTrack(53)">🎵 أغنية 53</div>
+        <div class="card" id="c54" onclick="loadTrack(54)">🎵 أغنية 54</div>
+        <div class="card" id="c55" onclick="loadTrack(55)">🎵 أغنية 55</div>
+        <div class="card" id="c56" onclick="loadTrack(56)">🎵 أغنية 56</div>
+        <div class="card" id="c57" onclick="loadTrack(57)">🎵 أغنية 57</div>
+        <div class="card" id="c58" onclick="loadTrack(58)">🎵 أغنية 58</div>
+        <div class="card" id="c59" onclick="loadTrack(59)">🎵 أغنية 59</div>
+        <div class="card" id="c60" onclick="loadTrack(60)">🎵 أغنية 60</div>
+        <div class="card" id="c61" onclick="loadTrack(61)">🎵 أغنية 61</div>
+        <div class="card" id="c62" onclick="loadTrack(62)">🎵 أغنية 62</div>
     </div>
 
     <div class="player-bar">
-        <div id="track-info">اختر أغنية للبدء</div>
+        <div id="track-info">اختر أغنية</div>
         <div class="progress-wrapper" onclick="seek(event)">
             <div id="progress-bar"></div>
         </div>
@@ -160,30 +112,23 @@
         const playBtn = document.getElementById('playBtn');
         const progBar = document.getElementById('progress-bar');
         const info = document.getElementById('track-info');
-        
         let currentIdx = 0;
-        const totalCards = 45;
+        const totalCards = 62;
+        const maxTime = 120; // 120 ثانية = دقيقتين
 
         function seek(event) {
             if (!audio.src) return;
             const rect = event.currentTarget.getBoundingClientRect();
             const x = event.clientX - rect.left;
-            const width = rect.width;
-            const percentage = x / width;
-            audio.currentTime = percentage * audio.duration;
+            const percentage = x / rect.width;
+            audio.currentTime = percentage * Math.min(audio.duration, maxTime);
         }
 
         function loadTrack(n) {
             currentIdx = n;
-            
-            // المنطق الجديد لأسماء الملفات:
-            if (n === 1) {
-                audio.src = `song.mp3`; // أول ملف
-            } else {
-                audio.src = `song${n - 1}.mp3`; // يبدأ بـ song1 من الكارت رقم 2
-            }
-            
-            info.innerText = "تشغيل أغنية رقم " + n;
+            // المنطق: كارت 1 يفتح song.mp3 | كارت 2 يفتح song1.mp3 وهكذا
+            audio.src = (n === 1) ? `song.mp3` : `song${n - 1}.mp3`;
+            info.innerText = "تشغيل كارت رقم " + n;
             document.querySelectorAll('.card').forEach(c => c.classList.remove('active'));
             document.getElementById('c'+n).classList.add('active');
             audio.play();
@@ -208,8 +153,9 @@
         }
 
         audio.ontimeupdate = () => {
+            if (audio.currentTime >= maxTime) { nextTrack(); }
             if(audio.duration) {
-                progBar.style.width = (audio.currentTime / audio.duration * 100) + "%";
+                progBar.style.width = (audio.currentTime / Math.min(audio.duration, maxTime) * 100) + "%";
             }
         };
 
